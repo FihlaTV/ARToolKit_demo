@@ -1,35 +1,10 @@
-/*
-*
-* This file is part of ARToolKit.
-*
-* ARToolKit is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; either version 2 of the License, or
-* (at your option) any later version.
-*
-* ARToolKit is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-* GNU General Public License for more details.
-*
-* You should have received a copy of the GNU General Public License
-* along with ARToolKit; if not, write to the Free Software
-* Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-*
-*/
-
-// ============================================================================
-//	Includes
-// ============================================================================
 #include "stdafx.h"
-
 #include <windows.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <GL/glut.h>
-
 #include <AR/config.h>
 #include <AR/video.h>
 #include <AR/param.h>
@@ -37,10 +12,7 @@
 #include <AR/gsub_lite.h>
 #include "calib_dist.h"
 
-
-
 char			*vconf = "Data\\WDM_camera_flipV.xml";
-
 static ARUint8		*gARTImage = NULL;
 // 处理的图像
 static ARParam		gARTCparam;
@@ -72,7 +44,6 @@ int             main(int argc, char *argv[]);
 static int      init(int argc, char *argv[]);
 static void     Mouse(int button, int state, int x, int y);
 static void     Motion(int x, int y);
-static void     Keyboard(unsigned char key, int x, int y);
 static void     Quit(void);
 static void     Idle(void);
 static void     Visibility(int visible);
@@ -117,7 +88,6 @@ int main(int argc, char *argv[])
 	glutDisplayFunc(Display);//用于注册一个绘图函数
 	glutReshapeFunc(Reshape);//当你改变窗口大小时的回调(CallBack)函数 
 	glutVisibilityFunc(Visibility);//设置当前窗口的可视回调函数
-	glutKeyboardFunc(Keyboard);//注册当前窗口的键盘回调函数
 	glutMouseFunc(Mouse);//注册当前窗口的鼠标回调函数
 	glutMotionFunc(Motion);
 	//arVideoCapStart()函数 对init()函数中的vid->graphManger，调用run()函数
@@ -359,57 +329,12 @@ static void Motion(int x, int y)
 		for (j = ssy; j <= eey; j++) {
 			p = &(gPatt.savedImage[gPatt.loop_num - 1][(j*gXsize + ssx)*AR_PIX_SIZE_DEFAULT]);
 			for (i = ssx; i <= eex; i++) {
-#if (AR_DEFAULT_PIXEL_FORMAT == AR_PIXEL_FORMAT_BGRA)
 				*p1 = (((255 * 3 - (*(p + 0) + *(p + 1) + *(p + 2))) / 3) < gThresh ? 0 : 255);
-#elif (AR_DEFAULT_PIXEL_FORMAT == AR_PIXEL_FORMAT_ABGR)
-				*p1 = (((255 * 3 - (*(p + 1) + *(p + 2) + *(p + 3))) / 3) < gThresh ? 0 : 255);
-#elif (AR_DEFAULT_PIXEL_FORMAT == AR_PIXEL_FORMAT_ARGB)
-				*p1 = (((255 * 3 - (*(p + 1) + *(p + 2) + *(p + 3))) / 3) < gThresh ? 0 : 255);
-#elif (AR_DEFAULT_PIXEL_FORMAT == AR_PIXEL_FORMAT_BGR)
-				*p1 = (((255 * 3 - (*(p + 0) + *(p + 1) + *(p + 2))) / 3) < gThresh ? 0 : 255);
-#elif (AR_DEFAULT_PIXEL_FORMAT == AR_PIXEL_FORMAT_RGBA)
-				*p1 = (((255 * 3 - (*(p + 0) + *(p + 1) + *(p + 2))) / 3) < gThresh ? 0 : 255);
-#elif (AR_DEFAULT_PIXEL_FORMAT == AR_PIXEL_FORMAT_RGB)
-				*p1 = (((255 * 3 - (*(p + 0) + *(p + 1) + *(p + 2))) / 3) < gThresh ? 0 : 255);
-#elif (AR_DEFAULT_PIXEL_FORMAT == AR_PIXEL_FORMAT_2vuy)
-				*p1 = ((255 - *(p + 1)) < gThresh ? 0 : 255);
-#elif (AR_DEFAULT_PIXEL_FORMAT == AR_PIXEL_FORMAT_yuvs)
-				*p1 = ((255 - *(p + 0)) < gThresh ? 0 : 255);
-#elif (AR_DEFAULT_PIXEL_FORMAT == AR_PIXEL_FORMAT_MONO)
-				*p1 = ((255 - *(p)) < gThresh ? 0 : 255);
-#else
-#  error Unknown default pixel format defined in config.h
-#endif
 				p += AR_PIX_SIZE_DEFAULT;
 				p1++;
 			}
 		}
 		glutPostRedisplay();
-	}
-}
-
-static void Keyboard(unsigned char key, int x, int y)
-{
-	switch (key) {
-	case 0x1B:
-		eventCancel();
-		break;
-	case 'T':
-	case 't':
-		printf("Enter new threshold value (now = %d): ", gThresh);
-		scanf_s("%d", &gThresh); while (getchar() != '\n');
-		printf("\n");
-		break;
-	case '1':
-		gThresh -= 5;
-		if (gThresh < 0) gThresh = 0;
-		break;
-	case '2':
-		gThresh += 5;
-		if (gThresh > 255) gThresh = 255;
-		break;
-	default:
-		break;
 	}
 }
 
