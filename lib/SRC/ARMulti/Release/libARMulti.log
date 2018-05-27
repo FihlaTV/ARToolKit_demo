@@ -1,0 +1,9 @@
+﻿  arMultiActivate.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arMultiGetTransMat.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arMultiReadConfigFile.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(D:\Desktop\ARToolKit\lib\SRC\ARMulti\Release\libARMulti.lib) does not match the Library's OutputFile property value (D:\Desktop\ARToolKit\lib\libARMulti.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  libARMulti.vcxproj -> D:\Desktop\ARToolKit\lib\SRC\ARMulti\Release\libARMulti.lib

@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (libARgsub.vcxproj, libARgsubUtil.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  gsub_lite.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+gsub_lite.c(678): warning C4090: “函数”: 不同的“const”限定符
+gsub_lite.c(737): warning C4090: “函数”: 不同的“const”限定符
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(D:\Desktop\ARToolKit\lib\SRC\Gl\Release\libARgsub_lite.lib) does not match the Library's OutputFile property value (D:\Desktop\ARToolKit\lib\libARgsub_lite.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  libARgsub_lite.vcxproj -> D:\Desktop\ARToolKit\lib\SRC\Gl\Release\libARgsub_lite.lib

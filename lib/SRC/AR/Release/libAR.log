@@ -1,0 +1,53 @@
+﻿  arDetectMarker.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arDetectMarker2.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arGetCode.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arGetMarkerInfo.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arGetTransMat.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arGetTransMat2.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arGetTransMat3.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arGetTransMatCont.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arLabeling.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  arUtil.c
+D:\Desktop\ARToolKit\include\AR/ar.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  mAlloc.c
+  mAllocDup.c
+  mAllocInv.c
+  mAllocMul.c
+  mAllocTrans.c
+  mAllocUnit.c
+  mDet.c
+  mDisp.c
+  mDup.c
+  mFree.c
+  正在生成代码...
+  正在编译...
+  mInv.c
+  mMul.c
+  mPCA.c
+  mSelfInv.c
+  mTrans.c
+  mUnit.c
+  paramChangeSize.c
+  paramDecomp.c
+  paramDisp.c
+  paramDistortion.c
+  paramFile.c
+  paramGet.c
+  vAlloc.c
+  vDisp.c
+  vFree.c
+  vHouse.c
+  vInnerP.c
+  vTridiag.c
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(D:\Desktop\ARToolKit\lib\SRC\AR\Release\libAR.lib) does not match the Library's OutputFile property value (D:\Desktop\ARToolKit\lib\libAR.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  libAR.vcxproj -> D:\Desktop\ARToolKit\lib\SRC\AR\Release\libAR.lib

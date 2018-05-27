@@ -1,0 +1,2 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(D:\Desktop\ARToolKit\lib\SRC\ARvrml\Release\libARvrml.lib) does not match the Library's OutputFile property value (D:\Desktop\ARToolKit\lib\libARvrml.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  libarvrml.vcxproj -> D:\Desktop\ARToolKit\lib\SRC\ARvrml\Release\libARvrml.lib
