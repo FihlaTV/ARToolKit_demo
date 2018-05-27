@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyApplication", "MyApplication\MyApplication.vcxproj", "{3FC4D5D9-D9A0-4417-8DB0-AE7B0FB4ABB9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyApplication", "ARToolKit_Demo\MyApplication.vcxproj", "{3FC4D5D9-D9A0-4417-8DB0-AE7B0FB4ABB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
