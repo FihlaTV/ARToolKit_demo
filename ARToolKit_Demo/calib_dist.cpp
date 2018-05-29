@@ -12,7 +12,7 @@
 #include <AR/gsub_lite.h>
 #include "calib_dist.h"
 
-char			*vconf = "Data\\WDM_camera_flipV.xml";
+char			*vconf = "../Data/WDM_camera_flipV.xml";
 static ARUint8		*gARTImage = NULL;
 // ´¦ÀíµÄÍ¼Ïñ
 static ARParam		gARTCparam;

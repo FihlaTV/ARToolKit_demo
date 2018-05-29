@@ -13,13 +13,13 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 
-char			*vconf = "Data\\WDM_camera_flipV.xml";
+char			*vconf = "../Data/WDM_camera_flipV.xml";
 int             xsize, ysize;
 int             thresh = 100;
 int             count = 0;
-char           *cparam_name = "Data/camera_para.dat";
+char           *cparam_name = "../Data/camera_para.dat";
 ARParam         cparam;
-char                *config_name = "Data/multi/marker.dat";
+char                *config_name = "../Data/multi/marker.dat";
 ARMultiMarkerInfoT  *config;
 
 static void   init(void);

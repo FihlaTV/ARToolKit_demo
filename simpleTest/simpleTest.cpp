@@ -12,11 +12,11 @@
 #include <AR/param.h>
 #include <AR/ar.h>
 //摄像机默认参数
-char			*vconf = "Data\\WDM_camera_flipV.xml";
+char			*vconf = "../Data/WDM_camera_flipV.xml";
 //摄像机特征参数
-char           *cparam_name = "Data/camera_para.dat";
+char           *cparam_name = "../Data/camera_para.dat";
 //标识信息
-char           *patt_name = "Data/patt.hiro";
+char           *patt_name = "../Data/patt.hiro";
 
 int             xsize, ysize;
 int             thresh = 100;

@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyApplication", "ARToolKit_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simpleTest", "simpleTest\simpleTest.vcxproj", "{94923F1E-D3FD-490A-9B8E-63C810C5DB88}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "multitest1", "multiTest\multitest1.vcxproj", "{8F7A9BA6-B227-4FA2-B07C-67C4581A62DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{94923F1E-D3FD-490A-9B8E-63C810C5DB88}.Release|x64.Build.0 = Release|x64
 		{94923F1E-D3FD-490A-9B8E-63C810C5DB88}.Release|x86.ActiveCfg = Release|Win32
 		{94923F1E-D3FD-490A-9B8E-63C810C5DB88}.Release|x86.Build.0 = Release|Win32
+		{8F7A9BA6-B227-4FA2-B07C-67C4581A62DD}.Debug|x64.ActiveCfg = Debug|x64
+		{8F7A9BA6-B227-4FA2-B07C-67C4581A62DD}.Debug|x64.Build.0 = Debug|x64
+		{8F7A9BA6-B227-4FA2-B07C-67C4581A62DD}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F7A9BA6-B227-4FA2-B07C-67C4581A62DD}.Debug|x86.Build.0 = Debug|Win32
+		{8F7A9BA6-B227-4FA2-B07C-67C4581A62DD}.Release|x64.ActiveCfg = Release|x64
+		{8F7A9BA6-B227-4FA2-B07C-67C4581A62DD}.Release|x64.Build.0 = Release|x64
+		{8F7A9BA6-B227-4FA2-B07C-67C4581A62DD}.Release|x86.ActiveCfg = Release|Win32
+		{8F7A9BA6-B227-4FA2-B07C-67C4581A62DD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

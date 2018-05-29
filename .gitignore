@@ -3,4 +3,5 @@ MyApplication/Debug/
 MyApplication/x64/
 ARToolKit_Demo.VC.VC.opendb
 ARToolKit_Demo.VC.db
-./vs
+./vs/
+ipch/
