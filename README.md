@@ -19,3 +19,8 @@
 加载两个 patt(patt.kanji 和patt.hiro) 分别对其检测，绘制。
 ![image](https://github.com/jiangfeng94/ARToolKit_demo/blob/master/multitest2/show.jpg)
 
+
+## simpleVRML
+绘制vrml三维模型
+![image](
+https://github.com/jiangfeng94/ARToolKit_demo/blob/master/simpleVRML/show.jpg)
