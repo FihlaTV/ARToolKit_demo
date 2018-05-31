@@ -23,4 +23,8 @@
 ## simpleVRML
 绘制vrml三维模型
 ![image](
-https://github.com/jiangfeng94/ARToolKit_demo/blob/master/simpleVRML/demo.gif)
+https://github.com/jiangfeng94/ARToolKit_demo/blob/master/simpleVRML/show.jpg)
+## Switch_Demo
+手势切换模型
+![image](
+https://github.com/jiangfeng94/ARToolKit_demo/blob/master/Switch_Demo/demo.gif)
