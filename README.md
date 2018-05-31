@@ -23,4 +23,4 @@
 ## simpleVRML
 绘制vrml三维模型
 ![image](
-https://github.com/jiangfeng94/ARToolKit_demo/blob/master/simpleVRML/show.jpg)
+https://github.com/jiangfeng94/ARToolKit_demo/blob/master/simpleVRML/demo.gif)

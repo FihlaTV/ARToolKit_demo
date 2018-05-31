@@ -184,6 +184,30 @@ static void Reshape(int w, int h)
 	glLoadIdentity();
 
 }
+
+static void   drawCuboid()//画长方体包围茶壶
+{
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(90.0f, 60.0f, 0.0f);
+	glVertex3f(-90.0f, 60.0f, 0.0f);
+	glVertex3f(-90.0f, 60.0f, 50.0f);
+	glVertex3f(90.0f, 60.0f, 50.0f);
+	glVertex3f(90.0f, -60.0f, 50.0f);
+	glVertex3f(-90.0f, -60.0f, 50.0f);
+	glVertex3f(-90.0f, -60.0f, 0.0f);
+	glVertex3f(90.0f, -60.0f, 0.0f);
+	glEnd();
+	glBegin(GL_LINES);
+	glVertex3f(90.0f, -60.0f, 0.0f);
+	glVertex3f(90.0f, -60.0f, 50.0f);
+	glVertex3f(-90.0f, -60.0f, 0.0f);
+	glVertex3f(-90.0f, 60.0f, 0.0f);
+	glVertex3f(-90.0f, -60.0f, 50.0f);
+	glVertex3f(-90.0f, 60.0f, 50.0f);
+	glVertex3f(90.0f, 60.0f, 0.0f);
+	glVertex3f(90.0f, 60.0f, 50.0f);
+	glEnd();
+}
 // 当窗口需要重新绘制模型的时候，调用该函数。
 static void Display(void)
 {
@@ -220,7 +244,13 @@ static void Display(void)
 				*/
 				glLoadMatrixd(m);//这里是设置虚拟相机的位置。
 //第三步：在标识上画出虚拟物体。  
-				arVrmlDraw(gObjectData[i].vrml_id);//根据前面加载的模型ID绘制模型  
+				arVrmlDraw(gObjectData[i].vrml_id);//根据前面加载的模型ID绘制模型 
+				if (gObjectData[i].vrml_id == 0) {
+					glColor3f(0, 1, 0);
+					drawCuboid();//绘制线状长方体 
+				}
+				 
+				
 			}
 		}
 	} 
